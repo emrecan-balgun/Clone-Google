@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 95px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <!-- Navbar - Start -->
+    <header>
+        <nav align="center">
+            <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="Google Logo">
+        </nav>
+    </header>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+    <section align="center">
+        <!-- Article - Start -->
+        <article style="background-color:lightgray">
+                Search the web using Google!<br>
+                 <input type="text" id="search" name="google-search" size="50"><br>
+                <button type="button">Google Search</button>&nbsp;
+                <button type="button">I'm feeling lucky</button><br>
+        </article>
+        <!-- Article - End -->
+    </section>
+    <!-- Content - End -->
+
+    <!-- Footer - Start -->
+    <footer align="center">
+        <nav class="row">
+            <nav class="column" style="background-color: turquoise;">
+                Special Searches<br>
+                <a href="https://www.stanford.edu/search/">Stanford Search</a><br>
+                <a href="https://www.linux.com/topic/desktop/how-search-files-linux-command-line/">Linux Search</a>
+            </nav>
+            <nav class="column" style="background-color: darkturquoise;">
+                <a href="https://support.google.com/">Help!</a><br>
+                <a href="https://about.google">About Google!</a><br>
+                <a href="https://www.thebalancecareers.com/google-overview-company-culture-and-history-2071320">Company Info</a><br>
+                <a href="https://tr.wikipedia.org/wiki/Google_logosu">Google! Logos</a>
+            </nav>
+            <nav class="column" style="background-color: lightseagreen">
+                Get Google!<br>
+                updates monthly:<br>
+                <input type="text" id="email-sub" name="email-subscription" size="20" placeholder="your e-mail"><br>
+                <button type="button">Subscribe</button>&nbsp;
+                <a href="mail.google.com/mail/">Archive</a>
+            </nav>
+        </nav>
+        <p>Copyright ©1998 Google Inc.</p>
+    </footer>
+    <!-- Footer - End -->
+</body>
+</html>
